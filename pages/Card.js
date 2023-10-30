@@ -55,7 +55,7 @@ const Card = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col overflow-hidden shadow-xl w-full max-w-sm mx-auto">
+                <div className="flex md:mx-56    flex-col overflow-hidden shadow-xl w-full max-w-sm ">
                   <div className="flex-1 p-4 lg:py-8 lg:px-7 border-2 border-blue-400 dark:border-blue-300 bg-black text-white rounded-3xl">
                     <div className="flex-1">
                       <p className="text-lg leading-relaxed text-white font-pj">
@@ -68,7 +68,7 @@ const Card = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col overflow-hidden shadow-xl w-full max-w-sm mx-auto">
+                <div className="flex md:mx-56 flex-col overflow-hidden shadow-xl w-full max-w-sm ">
                   <div className="flex-1 p-4 lg:py-8 lg:px-7 border-2 border-blue-400 dark:border-blue-300 bg-black text-white rounded-3xl">
                     <div className="flex-1">
                       <p className="text-lg leading-relaxed text-white font-pj">
