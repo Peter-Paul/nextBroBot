@@ -26,7 +26,7 @@ export default function Home() {
   
   <Hero />
   <Card />
-  <Hero1 />
+
   <Hero6 />
 
   <Hero4 />
