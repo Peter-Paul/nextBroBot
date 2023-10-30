@@ -12,7 +12,7 @@ const Hero9 = () => {
             <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Dive into the world of BRO Bot, your ultimate Telegram companion. Experience the adrenaline of sniping the hottest launches or effortlessly acquiring live tokens. Crafted for the Ethereum Network, BRO Bot is not just a tool, it&apos;s your gateway to seamless trading. As we evolve, more chains await. Join us, and redefine how you trade. Unleash the power. Don&apos;t just trade, BRO-trade! 🔥</p>
            
         </div>
-        <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
+        <div className=" lg:mt-0 lg:col-span-5 lg:flex">
            <Image src={LOGO} 
            classNameName='w-70'
            
@@ -20,7 +20,10 @@ const Hero9 = () => {
         </div>                
     </div>
     <div class="border-b-4 border-indigo-100 ">
-    dsfj</div>
+   
+    
+    
+    </div>
 </section>
 
     </div>

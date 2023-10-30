@@ -11,7 +11,7 @@ const Hero = () => {
             <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Harness the unmatched power of the BRO Bot to dominate the trading landscape:</p>
            
           </div>
-        <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
+        <div className="lg:mt-0 lg:col-span-5 lg:flex">
            <Image src={GIF} 
            classNameName='w-90'
            

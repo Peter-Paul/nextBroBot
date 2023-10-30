@@ -12,7 +12,7 @@ const Hero1 = () => {
              Step into a realm where trading is not just about transactions but a holistic experience, combining strategy, learning, and top-tier technology. Welcome to the world of BRO. 🌌🚀📚
            </p>
        </div>
-     <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
+     <div className=" lg:mt-0 lg:col-span-5 lg:flex">
        <Image src={LOGO} 
        classNameName='w-70'
        
