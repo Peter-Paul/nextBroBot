@@ -259,7 +259,7 @@ export default function Layout({children}) {
             </div>
           </div>
 
-          <main className="flex-1">
+          <main className=" min-h-screen flex-1">
             <div className="">
              
               <div className="mx-10 bg-gray-900 max-w-10xl px-4 gap-6 sm:px-6 md:px-8">
