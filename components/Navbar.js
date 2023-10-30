@@ -66,7 +66,7 @@ function NavBar() {
                     Twitter
                   </Link>
                 </li>
-                <li className="pb-2 text-xl bg-blue-500  text-white font-bold py-1 px-4 rounded ">
+                <li className="pb-2 text-xl bg-blue-500 text-center  text-white font-bold py-1 px-4 rounded ">
                 <Link href="/Dashboard" onClick={() => setNavbar(!navbar)}>
                  Dashboard
                 </Link>
