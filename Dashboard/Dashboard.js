@@ -1,6 +1,7 @@
 import React from 'react'
 import Chart from './Chart'
 import Table from './Table'
+import Table2 from './Table2'
 const Dashboard = () => {
   return (
     <main class="p-6 sm:p-10 space-y-6">
@@ -24,8 +25,8 @@ const Dashboard = () => {
   />
     </div>
     <div>
-      <span class="block text-2xl font-bold">62</span>
-      <span class="block text-gray-500">Students</span>
+      <span class="block text-2xl font-bold">Alex</span>
+      <span class=" font-bold text-xl text-green-900">+$1000</span>
     </div>
   </div>
   <div class="flex items-center p-8 bg-white shadow rounded-lg">
@@ -37,8 +38,8 @@ const Dashboard = () => {
   />
     </div>
     <div>
-      <span class="block text-2xl font-bold">6.8</span>
-      <span class="block text-gray-500">Average mark</span>
+      <span class="block text-2xl font-bold">Jenny</span>
+      <span class=" font-bold text-xl text-green-500">-$500</span>
     </div>
   </div>
   <div class="flex items-center p-8 bg-white shadow rounded-lg">
@@ -50,9 +51,9 @@ const Dashboard = () => {
   />
     </div>
     <div>
-      <span class="inline-block text-2xl font-bold">9</span>
-      <span class="inline-block text-xl text-gray-500 font-semibold">(14%)</span>
-      <span class="block text-gray-500">Underperforming students</span>
+      <span class="block text-2xl font-bold">Mike</span>
+     
+      <span class="font-bold text-xl text-green-500">+$1200</span>
     </div>
   </div>
 
@@ -65,11 +66,14 @@ const Dashboard = () => {
     <Chart />
    
   </div>
-  <Table />
+
  
 
   <div class="row-span-3 rounded-xl"></div>
-  <div class="row-span-3"></div>
+  
+  <div class="row-span-3">
+
+  </div>
 </section>
 
 
