@@ -1,7 +1,7 @@
 import React from 'react'
 import Chart from './Chart'
 import Table from './Table'
-import Table2 from './Table2'
+import Demo from './Demo'
 const Dashboard = () => {
   return (
     <main class="p-6 sm:p-10 space-y-6">
@@ -18,42 +18,36 @@ const Dashboard = () => {
 
   <div class="flex items-center p-8 bg-white shadow rounded-lg">
     <div class="inline-flex flex-shrink-0 items-center justify-center h-16 w-16 text-purple-600 bg-purple-100 rounded-full mr-6">
-    <img
-    className="h-10 w-10 rounded-full"
-    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-    alt=""
-  />
+    <svg aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6" />
+  </svg>
     </div>
     <div>
-      <span class="block text-2xl font-bold">Alex</span>
-      <span class=" font-bold text-xl text-green-900">+$1000</span>
+      <span class="block text-2xl font-bold">-$500</span>
+      <span class="block text-gray-500">32 minutes ago</span>
     </div>
   </div>
   <div class="flex items-center p-8 bg-white shadow rounded-lg">
     <div class="inline-flex flex-shrink-0 items-center justify-center h-16 w-16 text-green-600 bg-green-100 rounded-full mr-6">
-    <img
-    className="h-10 w-10 rounded-full"
-    src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww"
-    alt=""
-  />
+      <svg aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+      </svg>
     </div>
     <div>
-      <span class="block text-2xl font-bold">Jenny</span>
-      <span class=" font-bold text-xl text-green-500">-$500</span>
+      <span class="block text-2xl font-bold">+$1200</span>
+      <span class="block text-gray-500">50 minutes ago</span>
     </div>
   </div>
   <div class="flex items-center p-8 bg-white shadow rounded-lg">
     <div class="inline-flex flex-shrink-0 items-center justify-center h-16 w-16 text-red-600 bg-red-100 rounded-full mr-6">
-    <img
-    className="h-10 w-10 rounded-full"
-    src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fHww"
-    alt=""
-  />
+      <svg aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6" />
+      </svg>
     </div>
     <div>
-      <span class="block text-2xl font-bold">Mike</span>
-     
-      <span class="font-bold text-xl text-green-500">+$1200</span>
+      <span class="block text-2xl font-bold">-$100</span>
+
+      <span class="block text-gray-500">2 hours ago</span>
     </div>
   </div>
 
@@ -66,15 +60,16 @@ const Dashboard = () => {
     <Chart />
    
   </div>
+ <Demo />
 
  
 
   <div class="row-span-3 rounded-xl"></div>
+  <div class="row-span-3"></div>
   
-  <div class="row-span-3">
-
-  </div>
+  
 </section>
+
 
 
     </main>

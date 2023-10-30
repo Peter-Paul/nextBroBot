@@ -14,7 +14,7 @@ function TradingViewWidget() {
           ["BINANCE:BTCUSDT|1D"]
         ],
         "chartOnly": false,
-        "width": 340,
+        "width": 580,
         "height": 340,
         "locale": "in",
         "colorTheme": "dark",
