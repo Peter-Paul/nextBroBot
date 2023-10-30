@@ -2,7 +2,7 @@ export default function Example() {
     return (
       <div>
         <h3 className="text-lg font-medium text-gray-900">Last 30 days</h3>
-        <dl className="grid grid-cols-2 gap-6 sm:grid-cols-2">
+        <dl className="grid grid-cols-1 gap-6 sm:grid-cols-2">
           <div className="overflow-hidden rounded-lg bg-white px-4 py-5 shadow sm:p-6">
             <dt className="truncate text-2xl font-medium text-blue-700">Recent Signals
             </dt>
