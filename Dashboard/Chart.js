@@ -14,7 +14,7 @@ function TradingViewWidget() {
           ["BINANCE:BTCUSDT|1D"]
         ],
         "chartOnly": false,
-        "width": 530,
+        "width": 340,
         "height": 340,
         "locale": "in",
         "colorTheme": "dark",
@@ -51,7 +51,7 @@ function TradingViewWidget() {
   }, []);
 
   return (
-    <div className=" " ref={container}></div>
+    <div className="" ref={container}></div>
   );
 }
 

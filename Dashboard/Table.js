@@ -23,7 +23,7 @@ const Table = () => {
                                 <th class="p-2 whitespace-nowrap">
                                     <div class="font-semibold text-left">Spent</div>
                                 </th>
-                                <th class="p-2 whitespace-nowrap">
+                                <th class="p-2 whitespace-nowrap hidden">
                                     <div class="font-semibold text-center">Country</div>
                                 </th>
                             </tr>

@@ -51,26 +51,18 @@ const Dashboard = () => {
   
 </section>
 
-<section class="grid md:grid-cols-2 xl:grid-cols-4 xl:grid-rows-3 xl:grid-flow-col gap-6">
-<div class="flex flex-col md:col-span-2 md:row-span-2 shadow rounded-lg">
-<Chart />
+<section class="grid md:grid-cols-2 xl:grid-cols-4 xl:grid-rows-3 pt-5 xl:grid-flow-col gap-6">
+  <div class="flex flex-col md:col-span-2 md:row-span-2 w-[300vh] shadow rounded-lg pt-4">
+    <Chart />
+   
   </div>
-
-   <Table />
-
-
-<div class="row-span-3 rouned-xl ">
+  <Table />
  
-  
- 
-  
 
- 
-</div>
-<div class="row-span-3 ">
-
-</div>
+  <div class="row-span-3 rounded-xl"></div>
+  <div class="row-span-3"></div>
 </section>
+
 
     </main>
   )
