@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import LOGO from '../public/Logo.PNG'
+import GIF from '../public/GIF.gif'
 const Hero = () => {
   return (
     <div>
@@ -12,8 +12,8 @@ const Hero = () => {
            
           </div>
         <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
-           <Image src={LOGO} 
-           classNameName='w-70'
+           <Image src={GIF} 
+           classNameName='w-90'
            
            alt="Logo" />
            </div>                
