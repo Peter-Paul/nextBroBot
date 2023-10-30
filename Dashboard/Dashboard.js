@@ -46,7 +46,7 @@ const Dashboard = () => {
       </svg>
     </div>
     <div>
-      <span class="block text-2xl font-bold">-$100</span>
+      <span class="block text-2xl text-red-600 font-bold">-$100</span>
 
       <span class="block text-gray-500">2 hours ago</span>
     </div>
