@@ -7,33 +7,37 @@ const Hero4 = () => {
         <div className="text-center">
           <h2 className="text-3xl font-bold leading-tight text-gray-100 sm:text-4xl xl:text-5xl font-pj">Ensuring Longevity with BRO Bot</h2>
           <p className="mt-4 text-base leading-7 text-gray-100 sm:mt-8 font-pj">Some might wonder: How does BRO Bot maintain its robustness and remain resilient against market volatility? How do we handle potential selling pressure? Fear not, we&apos;ve meticulously planned this out. We&apos;ve delved deep, considered diverse scenarios, and crafted strategies to ensure minimal inflation impacts and potentially even induce deflation. Here&apoos;s how:</p>
+         
         </div>
 
         <div className="grid grid-cols-1 mt-10 text-center sm:mt-16 gap-y-12">
           <div className="sm:grid sm:grid-cols-3 sm:gap-x-12">
-            <div className="md:p-8 lg:p-14">
+            <div className="md:p-8 lg:p-14  border-2 border-blue-400 dark:border-blue-300">
               <h3 className="mt-12 text-xl font-bold text-gray-100 font-pj">Treasury Reinvestment</h3>
               <p className="mt-5 text-base text-gray-100 font-pj">A 1% treasury tax facilitates buybacks. In every scenario we&apos;ve modeled, this strategy effectively counteracts a significant portion of inflation.</p>
-            </div>
+             
+              </div>
 
-            <div className="md:p-8 lg:p-14 md:border-l md:border-gray-200">
+              
+
+            <div className="md:p-8 lg:p-14 md:border-l  border-2 border-blue-400 dark:border-blue-300 ">
               <h3 className="mt-12 text-xl font-bold text-gray-100 font-pj">Adjustable Multiplier Mechanism</h3>
               <p className="mt-5 text-base text-gray-100 font-pj">We have the Multiplier Z in our toolkit. This allows us to modulate emission rates as per market dynamics, ensuring equilibrium.</p>
             </div>
 
-            <div className="md:p-8 lg:p-14 md:border-l md:border-gray-200">
+            <div className="md:p-8 lg:p-14 md:border-l   border-2 border-blue-400 dark:border-blue-300">
               <h3 className="mt-12 text-xl font-bold text-gray-100 font-pj">Trade-to-Earn Cycle</h3>
               <p className="mt-5 text-base text-gray-100 font-pj">Encouraging users to trade more frequently amplifies bot volume, setting a positive, self-reinforcing loop in motion.</p>
             </div>
           </div>
 
-          <div className="sm:grid sm:grid-cols-2 sm:gap-x-12">
+          <div className="sm:grid sm:grid-cols-2 sm:gap-x-12  border-2 border-blue-400 dark:border-blue-300">
             <div className="md:p-8 lg:p-14">
               <h3 className="mt-12 text-xl font-bold text-gray-100 font-pj">$BRO Burn Initiatives</h3>
               <p className="mt-5 text-base text-gray-100 font-pj">We&apos;ll periodically introduce features that necessitate the burning of $BRO tokens, permanently removing them from circulation and increasing token scarcity.</p>
             </div>
 
-            <div className="md:p-8 lg:p-14 md:border-l md:border-gray-200">
+            <div className="md:p-8 lg:p-14 md:border-l  border-2 border-blue-400 dark:border-blue-300">
               <h3 className="mt-12 text-xl font-bold text-gray-100 font-pj">Incentivizing Holding</h3>
               <p className="mt-5 text-base text-gray-100 font-pj">A significant revenue share for token holders ensures they&apos;re motivated to retain their tokens, promoting stability.</p>
             </div>

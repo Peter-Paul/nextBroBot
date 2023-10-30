@@ -29,7 +29,7 @@ const Card = () => {
 
               <div className="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto md:max-w-none lg:gap-10">
                 <div className="flex flex-col overflow-hidden shadow-xl w-full max-w-sm mx-auto">
-                  <div className="flex-1 p-4 lg:py-8 lg:px-7 bg-black text-white rounded-3xl">
+                  <div className="flex-1 p-4 lg:py-8 lg:px-7 bg-black text-white border-2 border-blue-400 dark:border-blue-300 rounded-3xl">
                     <div className="flex-1">
                       <p className="text-lg leading-relaxed text-white font-pj">
                         🚀 Prime Signals: Our core promise is delivering the best trading signals in the industry. We&apos;re not just another trading bot; we are THE benchmark when it comes to accurate and timely signals.
@@ -38,7 +38,7 @@ const Card = () => {
                   </div>
                 </div>
                 <div className="flex flex-col overflow-hidden shadow-xl w-full max-w-sm mx-auto">
-                  <div className="flex-1 p-4 lg:py-8 lg:px-7 bg-black text-white rounded-3xl">
+                  <div className="flex-1 p-4 lg:py-8 lg:px-7 border-2 border-blue-400 dark:border-blue-300 bg-black text-white rounded-3xl">
                     <div className="flex-1">
                       <p className="text-lg leading-relaxed text-white font-pj">
                         🎯 Auto Sniping: With our advanced algorithms, snipe new tokens the moment they hit the market, ensuring you&apos;re always ahead of the crowd.
@@ -47,7 +47,7 @@ const Card = () => {
                   </div>
                 </div>
                 <div className="flex flex-col overflow-hidden shadow-xl w-full max-w-sm mx-auto">
-                  <div className="flex-1 p-4 lg:py-8 lg:px-7 bg-black text-white rounded-3xl">
+                  <div className="flex-1 p-4 lg:py-8 lg:px-7 border-2 border-blue-400 dark:border-blue-300 bg-black text-white rounded-3xl">
                     <div className="flex-1">
                       <p className="text-lg leading-relaxed text-white font-pj">
                         💼 Manual Buying & Selling: Full control in your hands. Decide when to buy or sell based on the impeccable signals provided by BRO Bot.
@@ -56,7 +56,7 @@ const Card = () => {
                   </div>
                 </div>
                 <div className="flex flex-col overflow-hidden shadow-xl w-full max-w-sm mx-auto">
-                  <div className="flex-1 p-4 lg:py-8 lg:px-7 bg-black text-white rounded-3xl">
+                  <div className="flex-1 p-4 lg:py-8 lg:px-7 border-2 border-blue-400 dark:border-blue-300 bg-black text-white rounded-3xl">
                     <div className="flex-1">
                       <p className="text-lg leading-relaxed text-white font-pj">
                         ⚙️ Limit Orders Perfected: Set your buy and sell limits with precision:
@@ -69,7 +69,7 @@ const Card = () => {
                   </div>
                 </div>
                 <div className="flex flex-col overflow-hidden shadow-xl w-full max-w-sm mx-auto">
-                  <div className="flex-1 p-4 lg:py-8 lg:px-7 bg-black text-white rounded-3xl">
+                  <div className="flex-1 p-4 lg:py-8 lg:px-7 border-2 border-blue-400 dark:border-blue-300 bg-black text-white rounded-3xl">
                     <div className="flex-1">
                       <p className="text-lg leading-relaxed text-white font-pj">
                         🚧 Unlaunched Token Orders: Why wait for the launch? Position yourself early by setting orders for tokens even before they launch.
