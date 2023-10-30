@@ -1,18 +1,24 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+
 import { useState } from 'react';
 import { BsFillCaretDownFill, BsFillCaretUpFill } from 'react-icons/bs';
 import LOGO from '../public/Logo.PNG'
 function NavBar() {
   const [navbar, setNavbar] = useState(false);
-  function scrollToHero3() {
-    const hero1Element = document.getElementById("Hero3");
 
-    if (hero1Element) {
-      hero1Element.scrollIntoView({ behavior: "smooth" });
-    }
-  }
+  const handleDownload = () => {
+    // You can change the file URL as needed.
+    const fileUrl = '/whitepaper_Bro Bot.pdf';
+    const link = document.createElement('a');
+    link.href = fileUrl;
+    link.download = 'whitepaper_Bro Bot.pdf';
+    link.click();
+  };
+
+ 
+ 
   return (
     <div>
       <nav className="w-full   left-0 right-0 z-10">
@@ -47,24 +53,24 @@ function NavBar() {
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex ">
                 <li className="pb-6 text-xl text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                <Link href="#" onClick={scrollToHero3}>
+                <button  onClick={handleDownload}>
                 Features
-              </Link>
+              </button>
                 </li>
                 <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link href="#blog" onClick={() => setNavbar(!navbar)}>
+                  <Link href="#broAcademy" onClick={() => setNavbar(!navbar)}>
                   Bro Academy
                   </Link>
                 </li>
                 <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link href="https://t.me/bro_bot_token" onClick={() => setNavbar(!navbar)}>
+                  <a href="https://t.me/bro_bot_token" onClick={() => setNavbar(!navbar)}>
                     Telegram
-                  </Link>
+                  </a>
                 </li>
                 <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link href="https://x.com/ur_bot_bro?s=21" onClick={() => setNavbar(!navbar)}>
+                  <a href="https://x.com/ur_bot_bro?s=21" onClick={() => setNavbar(!navbar)}>
                     Twitter
-                  </Link>
+                  </a>
                 </li>
                 <li className="pb-2 text-xl bg-blue-500 text-center  text-white font-bold py-1 px-4 rounded ">
                 <Link href="/Dashboard" onClick={() => setNavbar(!navbar)}>

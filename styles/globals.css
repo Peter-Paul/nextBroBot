@@ -16,6 +16,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
  background: linear-gradient(to bottom, #08201D, #000000);
 }

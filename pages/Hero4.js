@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hero4 = () => {
   return (
-    <section className="py-12 text-white sm:py-16 lg:py-20">
+    <section id="broAcademy" className="py-12 text-white sm:py-16 lg:py-20">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-bold leading-tight text-gray-100 sm:text-4xl xl:text-5xl font-pj">Ensuring Longevity with BRO Bot</h2>
