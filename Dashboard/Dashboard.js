@@ -1,6 +1,7 @@
 import React from 'react'
 import Chart from './Chart'
 import Table from './Table'
+import Demo1 from '../components/Demo1'
 import Demo from './Demo'
 
 const Dashboard = () => {
@@ -64,7 +65,7 @@ const Dashboard = () => {
  <Demo />
 
 
- 
+
 
   <div class="row-span-3 rounded-xl"></div>
   <div class="row-span-3"></div>

@@ -12,6 +12,17 @@ export default function Example() {
             <dt className="text-2xl font-medium text-green-400">New Coin Launch</dt>
             <dd className="mt-1 text-2xl font-bold tracking-tight text-green-100">Zelda Token</dd>
           </div>
+
+          <div className="overflow-hidden rounded-lg bg-white px-4 py-5 shadow sm:p-6">
+          <dt className="text-2xl font-medium text-green-400">Market Insights</dt>
+          <dd className="mt-1 text-2xl font-bold tracking-tight text-green-100">(BTC) ETF Approval Expected this year</dd>
+        </div>
+
+          <div className="overflow-hidden rounded-lg bg-white px-4 py-5 shadow sm:p-6">
+          <dt className="text-2xl font-medium text-green-400">Profit/Loss</dt>
+          <dd className="mt-1 text-2xl font-bold tracking-tight text-green-100">+$500 Profit 
+          <p>last 24 hours</p></dd>
+        </div>
          
         </dl>
       </div>
