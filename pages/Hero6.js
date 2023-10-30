@@ -3,7 +3,7 @@ import React from 'react'
 const Hero6 = () => {
   return (
   <>
-    <section className="dark:bg-gray-100  dark:text-gray-100">
+    <section className="  dark:text-gray-100">
 	<div className="container flex flex-col justify-center p-4 mx-auto md:p-8">
 		<p className="p-2 text-3xl font-medium tracki text-white text-center ">BRO Rewards for Bot Users</p>
 		<h2 className="mb-12 text-xl font-bold leadi text-center text-white sm:text-xl">Introducing an enticing incentive in our ecosystem: BRO Boost! Fancy being rewarded for transactions you were already going to make? Here&apos;s your chance! Every trade you execute through our bot adds to your volume, and a portion of this gets credited back to you in $BRO tokens (which also qualifies for the revenue share). Over time, this simple act can accumulate into a substantial reward. This seamless process naturally turns our bot users into token holders, and subsequently, potential investors.</h2>

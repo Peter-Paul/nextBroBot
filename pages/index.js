@@ -14,6 +14,7 @@ import Hero8 from './Hero8'
 import Hero9 from './Hero9'
 import Hero7 from './Hero7'
 import PreLoader from '@/components/PreLoader'
+import Footer from '@/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -34,6 +35,8 @@ export default function Home() {
   <Hero7 />
   <Hero8 />
   <Hero9 />
+  <Footer />
+
 
  
     
