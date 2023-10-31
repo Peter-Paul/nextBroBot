@@ -25,7 +25,7 @@ export default function Home() {
   <Navbar />
   <div className="video-container">
   <video autoPlay muted loop>
-    <source src="https://i.imgur.io/rBzZcid.mp4" type="video/mp4" />
+    <source src="https://i.imgur.com/5Mlr7dd.mp4" type="video/mp4" />
   </video>
 </div>
 
