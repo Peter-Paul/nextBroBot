@@ -53,16 +53,12 @@ function NavBar() {
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex ">
               <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-              <Link href="#" onClick={() => setNavbar(!navbar)}>
+              <Link href="/" onClick={() => setNavbar(!navbar)}>
              Home
               </Link>
             </li>
 
-            <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-            <Link href="/Hero1" onClick={() => setNavbar(!navbar)}>
-            Bro Bot Academy
-            </Link>
-          </li>
+          
 
 
                 <li className="pb-6 text-xl text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
@@ -83,7 +79,16 @@ function NavBar() {
                     Twitter
                   </a>
                 </li>
-                <li className="pb-2 text-xl bg-blue-500 text-center  text-white font-bold py-1 px-4 rounded ">
+
+                <li className="pb-2 text-xl  bg-blue-500 text-center  text-white font-bold py-1 px-4 rounded">
+            <Link href="/Hero1" onClick={() => setNavbar(!navbar)}>
+            Bro Bot Academy
+            </Link>
+          </li>
+
+
+
+                <li className="pb-2 mx-3 text-xl bg-blue-500 text-center  text-white font-bold py-1 px-4 rounded ">
                 <Link href="/Dashboard" onClick={() => setNavbar(!navbar)}>
                  Dashboard
                 </Link>

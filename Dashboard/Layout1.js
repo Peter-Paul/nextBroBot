@@ -30,6 +30,8 @@ import { MagnifyingGlassIcon } from '@heroicons/react/20/solid'
 import Hemlo from './Hemlo'
 import Dashboard from './Dashboard'
 import Logo from '../public/Logo.PNG'
+import { useContext } from 'react'
+import { AppContext } from '@/Context/AppContext'
 
 const navigation = [
     { name: 'Dashboard', href: '#', icon: HomeIcon, current: true },
@@ -53,6 +55,7 @@ function classNames(...classes) {
 
 export default function Example() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
+  const { account, connectWallet, error } = useContext(AppContext);
 
   return (
     <>
@@ -231,14 +234,26 @@ export default function Example() {
                 {/* Profile dropdown */}
                 <Menu as="div" className="relative ml-3">
                   <div>
-                    <Menu.Button className="flex max-w-xs items-center rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                      <span className="sr-only">Open user menu</span>
-                      <img
-                        className="h-8 w-8 rounded-full"
-                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                        alt=""
-                      />
-                    </Menu.Button>
+                  <div className="container">
+                  <div className="box">
+                    <h2 className='text-white'>
+                 
+                    </h2>
+            
+                    {account ? (
+                      <div className="account-box">
+                      <p class="pb-2 text-xl bg-black text-center text-white font-bold py-1 px-4 rounded sm:truncate sm:w-32 md:w-48 lg:w-auto">
+                      {account}
+                    </p>
+                      </div>
+                    ) : (
+                    <button className="sm:w-full md:w-auto sm:pb-2 sm:text-lg md:text-xl bg-gray-100 text-center text-black font-bold py-1 px-4 rounded" onClick={connectWallet}>
+  Connect
+</button>
+                    )}
+                    {error && <p className={`error shadow-border`}>{`Error: ${error}`}</p>}
+                  </div>
+                </div>
                   </div>
                   <Transition
                     as={Fragment}

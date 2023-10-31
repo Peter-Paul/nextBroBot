@@ -2,6 +2,11 @@ import React from 'react'
 import Image from 'next/image'
 import LOGO from '../public/Logo.PNG'
 import NavBar from '@/components/Navbar'
+import Hero6 from './Hero6'
+import Hero4 from './Hero4'
+import Hero5 from './Hero5'
+import Steps from './Steps'
+import Hero7 from './Hero7'
 const Hero1 = () => {
   return (
     <>
@@ -22,6 +27,15 @@ const Hero1 = () => {
     </div>                
 </div>
 </section>
+<Hero6 />
+<Hero4 />
+<Hero5 />
+<Steps />
+<Hero7 />
+
+
+
+
     </>
   )
 }

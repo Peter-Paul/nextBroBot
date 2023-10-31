@@ -27,12 +27,9 @@ export default function Home() {
   <Hero />
   <Card />
 
-  <Hero6 />
 
-  <Hero4 />
-  <Hero5 />
-  <Steps />
-  <Hero7 />
+
+ 
   <Hero8 />
   <Hero9 />
   <Footer />

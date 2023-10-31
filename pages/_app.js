@@ -1,5 +1,5 @@
 import '@/styles/globals.css'
-
+import AppProvider from '@/Context/AppContext';
 
 
 import { useEffect, useState } from 'react';
@@ -21,7 +21,9 @@ function MyApp({ Component, pageProps }) {
       {loading ? (
         <Preloader />
       ) : (
+        <AppProvider>
         <Component {...pageProps} />
+        </AppProvider>
       )}
     </div>
   );
