@@ -47,3 +47,42 @@ body {
     width: 250px; /* Set the width to 380px for mobile view */
   }
 }
+
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.background-video video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5); /* Optional overlay color */
+    /* Your content styling goes here */
+}
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+/* Style the video element */
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

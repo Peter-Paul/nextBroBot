@@ -15,6 +15,7 @@ import Hero9 from './Hero9'
 import Hero7 from './Hero7'
 import PreLoader from '@/components/PreLoader'
 import Footer from '@/components/Footer'
+import Hero10 from './Hero10'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,6 +23,11 @@ export default function Home() {
   return (
   <>
   <Navbar />
+  <div className="video-container">
+  <video autoPlay muted loop>
+    <source src="https://i.imgur.io/rBzZcid.mp4" type="video/mp4" />
+  </video>
+</div>
 
   
   <Hero />
@@ -29,7 +35,7 @@ export default function Home() {
 
 
 
- 
+ <Hero10 />
   <Hero8 />
   <Hero9 />
   <Footer />
