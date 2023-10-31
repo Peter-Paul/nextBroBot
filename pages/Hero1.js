@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import LOGO from '../public/Logo.PNG'
+import gif3 from '../public/gif3.gif'
 import NavBar from '@/components/Navbar'
 import Hero6 from './Hero6'
 import Hero4 from './Hero4'
@@ -20,7 +20,7 @@ const Hero1 = () => {
            </p>
        </div>
      <div className=" lg:mt-0 lg:col-span-5 lg:flex">
-       <Image src={LOGO} 
+       <Image src={gif3} 
        classNameName='w-70'
        
        alt="Logo" />

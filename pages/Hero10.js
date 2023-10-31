@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import LOGO from '../public/Logo.PNG'
+import gif2 from '../public/gif2.gif'
 const Hero10 = () => {
   return (
    <>
@@ -8,7 +8,7 @@ const Hero10 = () => {
            
    <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
    <div className=" lg:mt-0 lg:col-span-5 lg:flex">
-   <Image src={LOGO} 
+   <Image src={gif2} 
    classNameName='w-70'
    
    alt="Logo" />
