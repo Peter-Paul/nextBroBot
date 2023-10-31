@@ -251,7 +251,7 @@ export default function Example() {
   Connect
 </button>
                     )}
-                    {error && <p className={`error shadow-border`}>{`Error: ${error}`}</p>}
+                   
                   </div>
                 </div>
                   </div>
