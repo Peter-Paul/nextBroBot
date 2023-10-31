@@ -3,7 +3,7 @@ import React from 'react'
 const Hero8 = () => {
   return (
     <>
-        <section class=" dark:bg-gray-900">
+        <section class=" ">
     <div class="container px-6 py-10 mx-auto">
         <h1 class="text-3xl text-center font-semibold text-gray-100 capitalize lg:text-4xl dark:text-white">BRO Bot: Journey Ahead</h1>
         
