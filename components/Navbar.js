@@ -88,7 +88,7 @@ function NavBar() {
 
 
 
-                <li className="pb-2 mx-3 text-xl bg-blue-500 text-center  text-white font-bold py-1 px-4 rounded ">
+                <li className="pb-2 mx-3 text-xl bg-blue-500 text-center my-3 text-white font-bold  px-4 rounded ">
                 <Link href="/Dashboard" onClick={() => setNavbar(!navbar)}>
                  Dashboard
                 </Link>

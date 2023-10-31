@@ -234,15 +234,15 @@ export default function Example() {
                 {/* Profile dropdown */}
                 <Menu as="div" className="relative ml-3">
                   <div>
-                  <div className="container">
-                  <div className="box">
-                    <h2 className='text-white'>
+                  <div className="truncate">
+                  <div className="truncate text-ellipsis">
+                    <h2 className='text-white truncate text-ellipsis'>
                  
                     </h2>
             
                     {account ? (
-                      <div className="account-box">
-                      <p class="pb-2 text-xl bg-black text-center text-white font-bold py-1 px-4 rounded sm:truncate sm:w-32 md:w-48 lg:w-auto">
+                      <div className="truncate">
+                      <p class="pb-2  truncate text-xs bg-black text-center  text-white font-bold py-1 px-4 rounded  sm:w-32 md:w-48 lg:w-auto">
                       {account}
                     </p>
                       </div>
