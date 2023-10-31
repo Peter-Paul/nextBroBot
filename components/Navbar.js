@@ -4,6 +4,7 @@ import Link from 'next/link';
 
 import { useState } from 'react';
 import { BsFillCaretDownFill, BsFillCaretUpFill } from 'react-icons/bs';
+import {GiHamburgerMenu} from 'react-icons/gi';
 import LOGO from '../public/Logo.PNG'
 function NavBar() {
   const [navbar, setNavbar] = useState(false);
@@ -39,7 +40,7 @@ function NavBar() {
                   {navbar ? (
                     <BsFillCaretDownFill />
                   ) : (
-                    <BsFillCaretUpFill />
+                    <GiHamburgerMenu className='bg-white' />
                   )}
                 </button>
               </div>

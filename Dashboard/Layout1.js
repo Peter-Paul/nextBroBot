@@ -20,9 +20,14 @@ import {
   BellIcon,
   CalendarIcon,
   ChartBarIcon,
+  ChatBubbleBottomCenterIcon,
+  CommandLineIcon,
+  CurrencyDollarIcon,
   FolderIcon,
   HomeIcon,
   InboxIcon,
+  RocketLaunchIcon,
+  SignalIcon,
   UsersIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
@@ -32,16 +37,17 @@ import Dashboard from './Dashboard'
 import Logo from '../public/Logo.PNG'
 import { useContext } from 'react'
 import { AppContext } from '@/Context/AppContext'
+import { FaBuysellads } from 'react-icons/fa'
 
 const navigation = [
     { name: 'Dashboard', href: '#', icon: HomeIcon, current: true },
-    { name: 'Signal Bot', href: '#', icon: UsersIcon, current: false },
-    { name: 'Buy/Sell Bot', href: '#', icon: FolderIcon, current: false },
-    { name: 'Unlaunched Bot', href: '#', icon: CalendarIcon, current: false },
-    { name: 'Sniping Bot', href: '#', icon: InboxIcon, current: false },
-    { name: 'AI Assistant', href: '#', icon: InboxIcon, current: false },
-    { name: 'BRO Command Center', href: '#', icon: ChartBarIcon, current: false },
-    { name: 'Logout', href: '#', icon: ChartBarIcon, current: false },
+    { name: 'Signal Bot', href: '#', icon: SignalIcon, current: false },
+    { name: 'Buy/Sell Bot', href: '#', icon: CurrencyDollarIcon, current: false },
+    { name: 'Unlaunched Bot', href: '#', icon: RocketLaunchIcon, current: false },
+    { name: 'Sniping Bot', href: '#', icon: ChartBarIcon, current: false },
+    { name: 'AI Assistant', href: '#', icon: ChatBubbleBottomCenterIcon, current: false },
+    { name: 'BRO Command Center', href: '#', icon: CommandLineIcon, current: false },
+   
 ]
 const userNavigation = [
   { name: 'Your Profile', href: '#' },
