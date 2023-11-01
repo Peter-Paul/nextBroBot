@@ -1,10 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
-import BG from '../public/BG Video.gif'
+import Loader from '../public/Loader.gif'
 const PreLoader = () => {
   return (
     <div className="preloader">
-     <Image src={BG} alt='loader' />
+     <Image src={Loader} alt='loader' />
     </div>
   );
 };
