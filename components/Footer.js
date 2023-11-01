@@ -22,6 +22,7 @@ const Footer = () => {
             <FaTwitter size={30} />
           </a>
         </div>
+        <p className='text-center pt-2 text-green-100'>Copyright © 2023 BRO BOT. All rights reserved.</p>
       </footer>
     </div>
   );
