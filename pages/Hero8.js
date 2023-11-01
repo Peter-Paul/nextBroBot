@@ -1,9 +1,28 @@
-import React from 'react'
+import { useEffect, useRef, useState } from 'react';
 
 const Hero8 = () => {
+  const [visible, setVisible] = useState(false);
+  const elementRef = useRef();
+
+  const handleScroll = () => {
+    const element = elementRef.current;
+    if (element) {
+      const rect = element.getBoundingClientRect();
+      setVisible(rect.top < window.innerHeight - 100);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Check initial visibility
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   return (
     <>
-        <section class=" ">
+        <section  ref={elementRef}
+        className={`transition-opacity duration-1000 ease-in-out transform translate-y-1 opacity-0 ${
+          visible ? 'opacity-100 translate-y-0' : ''
+        }`}>
     <div class="container px-6 py-10 mx-auto">
         <h1 class="text-3xl text-center font-semibold text-gray-100 capitalize lg:text-4xl dark:text-white">BRO Bot: Journey Ahead</h1>
         

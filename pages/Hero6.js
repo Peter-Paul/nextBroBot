@@ -1,9 +1,27 @@
-import React from 'react'
+import { useEffect, useRef, useState } from 'react';
 
 const Hero6 = () => {
+  const [visible, setVisible] = useState(false);
+  const elementRef = useRef();
+
+  const handleScroll = () => {
+    const element = elementRef.current;
+    if (element) {
+      const rect = element.getBoundingClientRect();
+      setVisible(rect.top < window.innerHeight - 100);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Check initial visibility
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   return (
   <>
-    <section className="  dark:text-gray-100">
+    <section className={`transition-opacity duration-1000 ease-in-out transform translate-y-1 opacity-0 ${
+      visible ? 'opacity-100 translate-y-0' : 'dark:text-gray-100'
+    }`}  ref={elementRef}>
 	<div className="container flex flex-col justify-center p-4 mx-auto md:p-8">
 		<p className="p-2 text-3xl font-medium tracki text-white text-center ">BRO Rewards for Bot Users</p>
 		<h2 className="mb-12 text-xl font-bold leadi text-center text-white sm:text-xl">Introducing an enticing incentive in our ecosystem: BRO Boost! Fancy being rewarded for transactions you were already going to make? Here&apos;s your chance! Every trade you execute through our bot adds to your volume, and a portion of this gets credited back to you in $BRO tokens (which also qualifies for the revenue share). Over time, this simple act can accumulate into a substantial reward. This seamless process naturally turns our bot users into token holders, and subsequently, potential investors.</h2>

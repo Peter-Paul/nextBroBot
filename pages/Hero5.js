@@ -1,8 +1,29 @@
-import React from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const Hero5 = () => {
+  const [visible, setVisible] = useState(false);
+  const elementRef = useRef();
+
+  const handleScroll = () => {
+    const element = elementRef.current;
+    if (element) {
+      const rect = element.getBoundingClientRect();
+      setVisible(rect.top < window.innerHeight - 100);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Check initial visibility
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <>
+
+    <section   ref={elementRef}
+    className={`transition-opacity duration-1000 ease-in-out transform translate-y-1 opacity-0 ${
+      visible ? 'opacity-100 translate-y-0' : ''
+    }`}>
       <section className="relative py-12 sm:py-16 lg:py-20">
         <div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-xl mx-auto text-center">
@@ -76,6 +97,7 @@ const Hero5 = () => {
         <p className="max-w-md mx-auto text-center mt-6 text-base font-normal leading-7 text-gray-100">
           Receive automated $BRO rewards, which can be viewed and claimed directly via our Telegram bot interface. Your $BRO rewards are computed based on a specific multiplier applied to the volume transacted through our bot.
         </p>
+      </section>
       </section>
     </>
   );

@@ -1,8 +1,28 @@
-import React from 'react'
+import { useEffect, useRef, useState } from 'react';
 
 const Hero7 = () => {
+  const [visible, setVisible] = useState(false);
+  const elementRef = useRef();
+
+  const handleScroll = () => {
+    const element = elementRef.current;
+    if (element) {
+      const rect = element.getBoundingClientRect();
+      setVisible(rect.top < window.innerHeight - 100);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Check initial visibility
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   return (
 <>
+<section  ref={elementRef}
+className={`transition-opacity duration-1000 ease-in-out transform translate-y-1 opacity-0 ${
+  visible ? 'opacity-100 translate-y-0' : ''
+}`}>
 <div class="relative w-full h-full">
   <div class="absolute hidden w-full  lg:block h-96"></div>
   <div class="relative px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-1 lg:pb-16">
@@ -99,6 +119,7 @@ Anti-Scam Mechanisms
     </div>
   </div>
 </div>
+</section>
 </>
   )
 }

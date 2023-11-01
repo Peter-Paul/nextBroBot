@@ -1,11 +1,30 @@
-import React from 'react'
+import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image'
 import Buysell from '../public/Buysell.gif'
 const Hero9 = () => {
+    const [visible, setVisible] = useState(false);
+    const elementRef = useRef();
+  
+    const handleScroll = () => {
+      const element = elementRef.current;
+      if (element) {
+        const rect = element.getBoundingClientRect();
+        setVisible(rect.top < window.innerHeight - 100);
+      }
+    };
+  
+    useEffect(() => {
+      window.addEventListener('scroll', handleScroll);
+      handleScroll(); // Check initial visibility
+      return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
   return (
    <>
     <div>
-    <section className="">
+    <section ref={elementRef}
+    className={`transition-opacity duration-1000 ease-in-out transform translate-y-1 opacity-0 ${
+      visible ? 'opacity-100 translate-y-0' : ''
+    }`}>
     <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div className="mr-auto place-self-center lg:col-span-7">
             <h1 className="max-w-2xl mb-4 text-4xl  font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-white dark:text-white">Trade Like Never Before</h1>

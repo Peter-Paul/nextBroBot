@@ -1,7 +1,27 @@
-import React from 'react'
+import { useEffect, useRef, useState } from 'react';
 
 const Steps = () => {
+    const [visible, setVisible] = useState(false);
+    const elementRef = useRef();
+  
+    const handleScroll = () => {
+      const element = elementRef.current;
+      if (element) {
+        const rect = element.getBoundingClientRect();
+        setVisible(rect.top < window.innerHeight - 100);
+      }
+    };
+  
+    useEffect(() => {
+      window.addEventListener('scroll', handleScroll);
+      handleScroll(); // Check initial visibility
+      return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
   return (
+    <section  ref={elementRef}
+    className={`transition-opacity duration-1000 ease-in-out transform translate-y-1 opacity-0 ${
+      visible ? 'opacity-100 translate-y-0' : ''
+    }`}>
     <section className="py-10 text-white sm:py-16 lg:py-44">
     <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto text-center">
@@ -41,6 +61,7 @@ const Steps = () => {
             </div>
         </div>
     </div>
+</section>
 </section>
   )
 }
