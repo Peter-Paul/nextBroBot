@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image'
-import Buysell from '../public/Buysell.gif'
+import Loader from '../public/Loader.gif'
 const Hero9 = () => {
     const [visible, setVisible] = useState(false);
     const elementRef = useRef();
@@ -32,7 +32,7 @@ const Hero9 = () => {
            
         </div>
         <div className=" lg:mt-0 lg:col-span-5 lg:flex">
-           <Image src={Buysell} 
+           <Image src={Loader} 
            classNameName='w-70 '
            
            alt="Logo" />

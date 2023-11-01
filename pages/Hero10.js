@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image'
-import gif2 from '../public/gif2.gif'
+import signal from '../public/signal.png'
 const Hero10 = () => {
     const [visible, setVisible] = useState(false);
     const elementRef = useRef();
@@ -27,7 +27,7 @@ const Hero10 = () => {
            
    <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
    <div className=" lg:mt-0 lg:col-span-5 lg:flex">
-   <Image src={gif2} 
+   <Image src={signal} 
    classNameName='w-70'
    
    alt="Logo" />
