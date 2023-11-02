@@ -17,7 +17,7 @@ export default function Home() {
   <>
   <Navbar />
   <div className="video-container">
-    <video autoplay muted loop>
+    <video autoPlay muted loop playsinline>
     <source src="https://i.imgur.com/pjL1BDp.mp4" type="video/mp4" />
     </video>
   </div>
