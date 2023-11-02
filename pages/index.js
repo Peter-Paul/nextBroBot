@@ -17,8 +17,15 @@ export default function Home() {
   <>
   <Navbar />
   <div className="video-container">
-    <video autoPlay muted loop playsinline>
-    <source src="https://i.imgur.com/pjL1BDp.mp4" type="video/mp4" />
+    <video
+      controls
+      playsinline
+      autoPlay
+      muted
+      loop 
+      src="https://i.imgur.com/pjL1BDp.mp4"
+    >
+    {/* <source src="https://i.imgur.com/pjL1BDp.mp4" type="video/mp4" /> */}
     </video>
   </div>
 
